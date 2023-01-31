@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario Multi-Pasos </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        
+
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    </head>
+    <body>
+
+<header>
+    <nav class="navbar navbar-expand-lg nav-color fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"><img src="assets/img/logo-dsit.png" alt="" class="img-fluid logo" width="280px" height="54px"></a>
+            <!--Iniciar sesion
+
+
+            <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item nav-login">
+                        <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            -->
+
+
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div >
+        <div class="container">
+
+            <div class="row">
+                <div>
+                    <div class="container forms" >
+                        <form role="form" action="" method="post" class="f1 needs-validation" novalidate>
+                            <div>
+                                <!--paso 1 -->
+                                <fieldset style="background: #fff;">
+                                    <!--Prueba background-color: #14B2A1;-->
+                                    <div class="" style="background-color: #222222; color: #B5B5B5;">
+                                        <div class="row text-white">
+                                            <div class="col-lg-5   d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mascota-seneca.png" alt="" class="img-fluid d-none d-sm-none d-md-block " width="280px" height="280px">
+                                            </div>
+                                            <div class="col-12 col-lg-7 d-flex">
+                                                <p class="d-flex justify-content-center align-items-center  fs-1 mt-5 mx-3">
+                                                    Solicitud de entrega de Equipos (portátiles y desktop) para personas de la DSIT.
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <div class="d-flex justify-content-center" style="width: 92%; margin: auto;">
+                                                    <p class="    fs-5">En este formulario los coordinadores de cada cedex y grupo autónomo de la DSIT pueden solicitar computadores
+                                                        para los miembros de su equipo de acuerdo con la disponibilidad de activos.
+                                                        Estos activos corresponden a equipos que ya se utilizadoron por otros integrantes de la DSIT.</p>
+
+                                                </div>
+                                                <div>
+                                                    <p class="inicial-p">
+                                                        <label class="float-lg-end float-md-end ">
+                                                            Equipos Disponibles :
+                                                            <span class="fs-5">14</span>
+                                                             a la Fecha:
+                                                            <span id="date" class="fs-5">DATE</span>
+                                                            <span id="time" class="fs-5">00:00:00</span>
+                                                        </label>
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Fin Prueba -->
+                                    <br>
+                                   <div class="container">
+                                       <label class="float-lg-start"><span class="text-danger fs-5" style="margin-right: 0.8rem">*</span>Campo Obligatorio</label>
+                                       <br><br>
+                                       <h3 class="title-forms">Informacion del solicitante </h3>
+                                       <p class="p-forms">Se registrará información del cedex al cual pertenece. (la solicitud debe realizarla el coordinador del cedex o área autónoma)</p>
+                                       <div class="p-3">
+                                           <div class="form-floating col-md-12  ">
+                                               <input type="text" class="form-control" id="validationCustom01 floatingNameuser" placeholder="Nombre de Usuario UNIANDES" required>
+                                               <label for="floatingNameuser">1.Login (Sin el @<u>uniandes.edu.co</u>) <span style="color: red;">*</span></label>
+                                               <div class="invalid-feedback">
+                                                   Este campo es Requerido por favor escribir su Nombre de Usuario sin el @uniande.edu.co
+                                               </div>
+                                               <div class="valid-feedback">
+                                                   Validado.
+                                               </div>
+                                           </div>
+                                       </div>
+
+                                       <div class="p-3">
+                                           <div class="form-floating col-md-12">
+                                               <input type="text" class="form-control" id="validationCustom01 floatingName" placeholder="Nombre" required>
+                                               <label for="floatingName">2. Nombre Completo <span style="color: red;">*</span></label>
+
+
+                                               <div class="invalid-feedback">
+                                                   Este campo es Requerido por favor escribir su Nombre.
+                                               </div>
+                                               <div class="valid-feedback">
+                                                   Validado.
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="p-3">
+                                           <div class="form-floating col-md-12 ">
+                                               <input type="text" class="form-control" id="validationCustom01 floatingJefatura" placeholder="name@exa" required>
+                                               <label for="floatingJefatura">3. Jefatura <span style="color: red;">*</span></label>
+                                               <div class="invalid-feedback">
+                                                   Este campo es Requerido por favor escribir el Nombre de la Jefatura
+                                               </div>
+                                               <div class="valid-feedback">
+                                                   Validado
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="p-3">
+                                           <div class="form-floating col-md-12" >
+                                               <input type="text" class="form-control" id="validationCustom01 floatingCedex" placeholder="name@exa" required>
+                                               <label for="floatingCedex">4. Cedex o Área autónoma <span style="color: red;">*</span></label>
+                                               <div class="invalid-feedback">
+                                                   Este campo es Requerido por favor escribir el Nombre del Cedex o Área autónoma
+                                               </div>
+                                               <div class="valid-feedback">
+                                                   Validado
+                                               </div>
+                                           </div>
+                                       </div>
+
+                                       <div class="f1-buttons p-3">
+                                           <button type="button" class="btn btn-next btn-next1">Siguiente</button>
+                                       </div>
+                                   </div>
+                                </fieldset>
+                                <!--fin del paso 1 -->
+                                <!--paso fin -->
+                                <fieldset style="background: #fff;" >
+                                    <!--Prueba -->
+                                    <div class="" style="background-color: #222222; color: #B5B5B5;">
+                                        <div class="row ">
+                                            <div class="col-lg-5   d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/seneca.png" alt="" class="img-fluid d-none d-sm-none d-md-block " width="240px" height="240px">
+                                            </div>
+                                            <div class="col-12 col-lg-7 d-flex">
+                                                <p class="d-flex justify-content-center align-items-center fs-1 mt-5 mx-3 text-center">
+                                                    Solicitud de entrega de Equipos (portátiles y desktop) para personas de la DSIT.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p class="inicial-p">
+
+                                                    <label class="float-lg-end float-md-end ">
+                                                        Equipos Disponibles :
+                                                        <span class="fs-5">
+                                                            14
+                                                        </span>
+                                                         a la Fecha:
+                                                        <span id="date" class="fs-5">DATE</span>
+                                                        <span id="time" class="fs-5">00:00:00</span>
+                                                    </label>
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Fin Prueba -->
+                                    <br>
+                                    <div class="container">
+                                        <label class="float-lg-start"><span class="text-danger fs-5" style="margin-right: 0.8rem">*</span>Campo Obligatorio</label>
+                                        <br><br>
+                                        <h3 class="title-forms">Datos de la persona que requiere el equipo</h3>
+                                        <div class="p-3">
+                                            <div class="form-floating col-md-12">
+                                                <input type="text" class="form-control" id="validationCustom01 floatingNameuser" placeholder="Nombre de Usuario UNIANDES" required>
+                                                <label for="floatingNameuser">5. Login (Sin el @<u>uniandes.edu.co</u>) <span style="color: red;">*</span></label>
+                                                <div class="invalid-feedback">
+                                                    Este campo es Requerido por favor escribir su Nombre de Usuario sin el @uniande.edu.co
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Validado.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="form-floating col-md-12 ">
+                                                <input type="text" class="form-control" id="validationCustom01 floatingName" placeholder="Nombre" required>
+                                                <label for="floatingName">6. Nombre Completo <span style="color: red;">*</span> (Persona que requiere asignación de equipo.)</label>
+
+
+                                                <div class="invalid-feedback">
+                                                    Este campo es Requerido por favor escribir su Nombre.
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Validado.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="form-floating col-md-12 ">
+                                                <input type="text" class="form-control" id="validationCustom01 floatingtelefono" placeholder="3112334455" required>
+                                                <label for="floatingtel">7. Teléfono de contacto <span style="color: red;">*</span></label>
+                                                <div class="invalid-feedback">
+                                                    Este campo es Requerido por favor escribir el Nombre de la Jefatura
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Validado
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="form-floating col-md-12 " >
+                                                <input type="text" class="form-control" id="validationCustom01 floatingdireccion" placeholder="calle 123.." required>
+                                                <label for="floatingdireccion">8. Dirección, lo más detallada posible <span style="color: red;">*</span></label>
+                                                <div class="invalid-feedback">
+                                                    Este campo es Requerido por favor escribir el Nombre del Cedex o Área autónoma
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Validado
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="" aria-required="true" >
+                                                <label >9. Lugar de residencia <span style="color: red;">*</span></label>
+                                                <br>
+                                                <label style="font-size: 14px;" >Soacha esta comprendida como Fuera de Bogotá.</label>
+                                                <br>
+                                                <div>
+                                                    <select  name="contact" class="form-select" required aria-required="true" >
+                                                        <option >Seleccione su Lugar de Residencia...</option>
+                                                        <option value="DTB">Dentro de Bogotá</option>
+                                                        <option value="FRB">Fuera de Bogotá</option>
+                                                    </select>
+                                                </div>
+
+                                                <br>
+                                                <div>
+                                                    <label class="input--hide js-select" id="DTB">
+                                                        <div class="mb-3">
+                                                            <label for="DTB-10" class="form-label">10. Sofware especializado que requiera <span style="color: red;">*</span> </label>
+                                                            <textarea class="form-control"  id="DTB-10" rows="3"></textarea>
+                                                        </div>
+                                                        <div >
+                                                            <label>11. Requiere periféricos? <span style="color: red;">*</span> </label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckPantalla">
+                                                                <label class="form-check-label" for="flexCheckPantalla">
+                                                                    Pantalla
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckTeclado">
+                                                                <label class="form-check-label" for="flexCheckTeclado">
+                                                                    Teclado
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckMouse">
+                                                                <label class="form-check-label" for="flexCheckMouse">
+                                                                    Mouse
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckTda">
+                                                                <label class="form-check-label" for="flexCheckTda">
+                                                                    Todas las anteriores
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckNa">
+                                                                <label class="form-check-label" for="flexCheckNa">
+                                                                    N/A
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div >
+                                                            <label>12. Devuelve Equipo? <span style="color: red;">*</span> </label>
+                                                            <div class="form-check" >
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioY">
+                                                                <label class="form-check-label" for="flexRadioY">
+                                                                    Si
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioN">
+                                                                <label class="form-check-label" for="flexRadioN">
+                                                                    No
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </label>
+
+                                                    <label class="input--hide js-select" id="FRB">
+                                                        <div class="mb-3">
+                                                            <label for="FRB-10" class="form-label">10. Centro de costo <span style="color: red;">*</span> </label>
+                                                            <label style="font-size: 14px;">
+                                                                El área de correspondencia nos solicita estos datos si el envió es fuera de Bogotá o si se requiere enviar el equipo con periféricos.
+                                                            </label>
+                                                            <p style="font-size: 14px;">Nota: Incluya el centro de costo (CECO, Unidad, objeto y  # área funcional)</p>
+                                                            <textarea class="form-control" id="FRB-10" rows="3" ></textarea>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="FRB-11" class="form-label" >11. Sofware especializado que requiera <span style="color: red;">*</span> </label>
+                                                            <textarea class="form-control" id="FRB-11" rows="3" ></textarea>
+                                                        </div>
+                                                        <div >
+                                                            <label>12. Requiere periféricos? <span style="color: red;">*</span> </label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckPantalla2">
+                                                                <label class="form-check-label" for="flexCheckPantalla2">
+                                                                    Pantalla
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckTeclado2">
+                                                                <label class="form-check-label" for="flexCheckTeclado2">
+                                                                    Teclado
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckMouse2">
+                                                                <label class="form-check-label" for="flexCheckMouse2">
+                                                                    Mouse
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckTda2">
+                                                                <label class="form-check-label" for="flexCheckTda2">
+                                                                    Todas las anteriores
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckNa2">
+                                                                <label class="form-check-label" for="flexCheckNa2">
+                                                                    N/A
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div >
+                                                            <label>13. Devuelve Equipo? <span style="color: red;">*</span> </label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioY2">
+                                                                <label class="form-check-label" for="flexRadioY2">
+                                                                    Si
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" >
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioN2">
+                                                                <label class="form-check-label" for="flexRadioN2">
+                                                                    No
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="f1-buttons">
+                                                <button type="button" class="btn btn-previous">Atrás</button>
+                                                <button type="submit" class="btn btn-submit">Enviar Información</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <!--fin -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer class="bd-footer py-4 d-flex justify-content-center align-items-center footer-uniandes" style="background-color: #222222">
+    <div style="width: 75%">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="assets/img/dsit_logo_blanco.png" alt="" class="img-fluid" width="280px">
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center flex-lg-row-reverse text-center a">
+                <div class="line">
+                    <p>Fejatura Gestion de servicio <br>
+                        cedex DSIT</p>
+                </div>
+
+            </div>
+        </div>
+        <hr style="background-color: #B5B5B5">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <p class="footer-p">Universidad de los Andes | Vigilada Mineducación Reconocimiento como Universidad: Decreto 1297 del 30 de mayo de 1964.
+                    <br>
+                    Reconocimiento personería jurídica: Resolución 28 del 23 de febrero de 1949 Minjusticia.
+                </p>
+            </div>
+            <div class="col-12 col-lg-5 d-flex flex-row-reverse">
+                <p class="footer-p d-flex align-items-center">&#169;- Derechos Reservados Universidad de los Andes </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <script >
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+        
+
+
+    </body>
+
+</html>
